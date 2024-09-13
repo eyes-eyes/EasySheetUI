@@ -172,3 +172,11 @@ div.flex_row {
 div.flex {
     display: flex;
 }
+
+div.main_file_selector {
+    text-align: center;
+    align-items: center;
+    padding: 0 2rem;
+    /* width: 100%; */
+    position: relative;
+}

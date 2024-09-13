@@ -32,7 +32,7 @@ div.base div.base_inner {
     position: relative;
     width: 1450px;
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
@@ -96,7 +96,7 @@ div.easysheet_info {
 }
 
 div.easysheet_flex div.easysheet_info {
-    padding: 0 20px;
+    padding: 0 2rem;
 }
 
 div.easysheet_flex div.intro_container {

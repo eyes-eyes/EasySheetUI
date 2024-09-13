@@ -63,6 +63,8 @@ div.body div.base:first-child {
     padding-right: 0;
     padding-left: 0;
     border: 0;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 div.base {
@@ -177,6 +179,8 @@ div.main_file_selector {
     text-align: center;
     align-items: center;
     padding: 0 2rem;
-    /* width: 100%; */
+    width: 45%;
     position: relative;
+    background: #1bff68;
+    border-radius: 1.5rem;
 }

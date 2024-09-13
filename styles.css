@@ -184,8 +184,9 @@ div.main_file_selector {
 }
 
 div.dragDrop {
+    vertical-align: middle;
     position: relative;
     height: 100%;
-    background: #1bff68;
     border-radius: 1.5rem;
+    border: 4px dashed #1bff68;
 }

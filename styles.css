@@ -59,7 +59,7 @@ div.brand_name span {
 }
 
 div.body div.base:first-child {
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
     padding-bottom: 40px;
     padding-right: 0;
     padding-left: 0;
@@ -68,8 +68,20 @@ div.body div.base:first-child {
     margin-right: auto; */
 }
 
-div.base {
+/* div.base {
     padding: 60px 0;
+} */
+
+@media (min-width: 768px) {
+    div.base {
+        padding-top: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    div.base {
+        padding-top: 2rem;
+    }
 }
 
 div.easysheet_flex {

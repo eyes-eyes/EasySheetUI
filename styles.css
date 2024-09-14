@@ -130,7 +130,7 @@ div.easysheet_flex div.easysheet_info {
 div.easysheet_flex div.intro_container {
     position: relative;
     max-width: 100%;
-    padding: 0 0 30px 0;
+    /* padding: 0 0 30px 0; */
 }
 
 div.easysheet_flex div.intro_container p {
@@ -212,10 +212,17 @@ div.dragDrop {
     align-items: center;
     text-align: center;
     justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+div.dragDrop:hover {
+    background: white;
 }
 
 div.dragDrop p {
     padding: 0;
     margin: 0;
     line-height: 1;
+    font-size: 20px;
 }

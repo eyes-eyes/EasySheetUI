@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding-top: 0;
     padding-bottom: 0;
+    margin: 0;
 }
 
 body {
@@ -58,34 +59,26 @@ div.brand_name span {
     overflow: hidden;
 }
 
-div.body div.base:first-child {
-    /* padding-top: 8rem; */
-    padding-bottom: 40px;
+div.body div.base {
+    padding-bottom: 3rem;
     padding-right: 0;
     padding-left: 0;
     border: 0;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
-/* div.base {
-    padding: 60px 0;
-} */
+div.base {
+    padding-top: 2rem;
+}
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     div.base {
         padding-top: 8rem;
     }
 }
 
-@media (max-width: 768px) {
-    div.base {
-        padding-top: 2rem;
-    }
-}
-
 div.easysheet_flex {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
@@ -103,19 +96,19 @@ div.easysheet_info {
     grid-column: span 2 / span 2;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     div.grid_col_3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     div.grid_col_1 {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     div.main_file_selector {
         margin-top: 1rem;
         margin-bottom: 1rem;
@@ -130,17 +123,25 @@ div.easysheet_flex div.easysheet_info {
 div.easysheet_flex div.intro_container {
     position: relative;
     max-width: 100%;
-    /* padding: 0 0 30px 0; */
 }
 
+/*
+The big text
+*/
 div.easysheet_flex div.intro_container p {
-    font-size: 3.75rem;
+    font-size: 3rem;
     font-weight: 700;
     font-family: Poppins, sans-serif;
     color: black;
     margin-bottom: 0;
     margin-top: 0;
     line-height: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+    div.easysheet_flex div.intro_container p {
+        font-size: 3.75rem;
+    }
 }
 
 div.keyinfo p {
@@ -212,17 +213,59 @@ div.dragDrop {
     align-items: center;
     text-align: center;
     justify-content: center;
-    cursor: pointer;
     user-select: none;
+    flex-direction: column;
 }
 
+/*
+Only when user is dragging zip file
 div.dragDrop:hover {
     background: white;
-}
+} */
 
 div.dragDrop p {
     padding: 0;
     margin: 0;
     line-height: 1;
     font-size: 20px;
+}
+
+input.file_upload {
+    overflow: hidden;
+    cursor: pointer;
+    background: #29b586;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+}
+
+input.file_upload:hover {
+    background: #65cca9;
+}
+
+div.moreinfo_area div.moreinfo_inner {
+    position: relative;
+    width: 1296px;
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+div.moreinfo_area {
+    margin-top: 6rem;
+}
+
+div.moreinfo p {
+    font-size: 1.5rem;
+}
+
+div.moreinfo {
+    background: #e0d9fc;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    height: 8rem;
+    font-weight: 700;
+    color: rgb(0, 184, 255);
 }

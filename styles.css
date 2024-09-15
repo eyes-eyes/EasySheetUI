@@ -269,3 +269,8 @@ div.moreinfo {
     font-weight: 700;
     color: rgb(0, 184, 255);
 }
+
+img.creeperhead {
+    width: 80px;
+    border-radius: 0.5rem;
+}

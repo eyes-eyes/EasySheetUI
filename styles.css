@@ -252,6 +252,7 @@ input.file_upload {
     padding: 0.5rem;
     border-radius: 0.75rem;
     margin-top: 1rem;
+    max-width: 100%;
 }
 
 input.file_upload:hover {

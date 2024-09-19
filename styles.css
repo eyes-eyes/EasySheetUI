@@ -87,7 +87,7 @@ div.base {
 
 @media only screen and (min-width: 768px) {
     div.base {
-        padding-top: 8rem;
+        padding-top: 7rem;
     }
 }
 
@@ -271,7 +271,7 @@ div.moreinfo_area div.moreinfo_inner {
 }
 
 div.moreinfo_area {
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 div.moreinfo p {
@@ -315,4 +315,14 @@ div.github_info p {
 div.shortcuts p {
     font-weight: 500;
     line-height: 1;
+}
+
+span.code_box {
+    display: inline-block;
+    margin: 2px;
+    padding: 3px 6px;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    font-family: monospace;
+    background-color: #f0f0f0;
 }

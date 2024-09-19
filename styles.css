@@ -240,7 +240,7 @@ div.dragDrop:hover {
 
 div.dragDrop p {
     padding: 0;
-    margin: 0;
+    margin-top: 1rem;
     line-height: 1;
     font-size: 20px;
 }
@@ -288,5 +288,5 @@ div.moreinfo {
 
 img.creeperhead {
     width: 80px;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
 }

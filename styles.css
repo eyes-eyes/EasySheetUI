@@ -281,12 +281,9 @@ div.moreinfo p {
 div.moreinfo {
     background: #edf0f2;
     align-items: center;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     border-radius: 0.75rem;
     height: 8rem;
-    font-weight: 700;
-    color: rgb(0, 184, 255);
 }
 
 img.creeperhead {
@@ -295,6 +292,27 @@ img.creeperhead {
 }
 
 img.github_logo {
-    width: 40px;
+    width: 30px;
     margin: 0 8px;
+    line-height: 1;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+}
+
+div.github_info {
+    color: rgb(0, 184, 255);
+}
+
+div.github_info p {
+    font-weight: 700;
+    line-height: 1;
+    margin: auto 0;
+}
+
+div.shortcuts p {
+    font-weight: 500;
+    line-height: 1;
 }

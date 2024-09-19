@@ -290,3 +290,7 @@ img.creeperhead {
     width: 80px;
     border-radius: 0.25rem;
 }
+
+img.github_logo {
+    width: 40px;
+}

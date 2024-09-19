@@ -241,6 +241,8 @@ div.dragDrop:hover {
 div.dragDrop p {
     padding: 0;
     margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     line-height: 1;
     font-size: 20px;
 }
@@ -251,7 +253,8 @@ input.file_upload {
     background: #29b586;
     padding: 0.5rem;
     border-radius: 0.75rem;
-    margin-top: 1rem;
+    margin: 1rem 0.5rem;
+    width: fit-content;
     max-width: 100%;
 }
 
@@ -276,7 +279,7 @@ div.moreinfo p {
 }
 
 div.moreinfo {
-    background: #e0d9fc;
+    background: #edf0f2;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -293,4 +296,5 @@ img.creeperhead {
 
 img.github_logo {
     width: 40px;
+    margin: 0 8px;
 }

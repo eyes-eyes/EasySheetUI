@@ -91,6 +91,12 @@ div.base {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    div.body div.base {
+        padding-bottom: 1rem;
+    }
+}
+
 div.easysheet_flex {
     display: flex;
     flex-direction: column;
@@ -232,10 +238,9 @@ div.dragDrop {
     flex-direction: column;
 }
 
-/*
-Only when user is dragging zip file
+/* Only when user is dragging zip file
 div.dragDrop:hover {
-    background: white;
+    background: grey;
 } */
 
 div.dragDrop p {
@@ -271,7 +276,7 @@ div.moreinfo_area div.moreinfo_inner {
 }
 
 div.moreinfo_area {
-    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 div.moreinfo p {

@@ -1,5 +1,6 @@
 /*
 potential color palette?: https://coolors.co/fadc00-f8f9fa-b388eb-8093f1-3a3042
+font family: Arimo, Telex
 */
 
 body {
@@ -12,7 +13,7 @@ body {
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 3rem;
+    height: 3.25rem;
     position: fixed;
     color: white;
     font-size: 2vmin;
@@ -26,7 +27,7 @@ body {
 }
 
 .top_bar_thingy button {
-    background-color: #1899d6;
+    background-color: #5868b6;
     border: solid transparent;
     border-radius: 12px;
     border-width: 0 0 4px;
@@ -56,7 +57,7 @@ body {
 
 .top_bar_thingy button:after {
     background-clip: padding-box;
-    background-color: #1cb0f6;
+    background-color: #8093f1;
     border: solid transparent;
     border-radius: 12px;
     border-width: 0 0 4px;
@@ -95,4 +96,10 @@ button.back_button {
     top: 50%;
     position: absolute;
     transform: translate(0px, -50%);
+}
+
+.box_area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }

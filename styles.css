@@ -13,6 +13,10 @@
     src: url("fonts/Minecraft-Seven_v2.woff2");
 }
 
+/*
+potential color palette?: https://coolors.co/fadc00-f8f9fa-b388eb-8093f1-3a3042
+*/
+
 * {
     box-sizing: border-box;
     padding-top: 0;

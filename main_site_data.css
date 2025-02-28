@@ -9,6 +9,14 @@ body {
     background: #efefef;
 }
 
+h1,h2 {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
 .top_bar_thingy {
     left: 0px;
     top: 0px;
@@ -99,7 +107,25 @@ button.back_button {
 }
 
 .box_area {
+    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.counterTitle {
+    /* position: absolute; */
+    font-family: Arimo;
+}
+
+.counter {
+    position: absolute;
+    font-family: Nunito;
+    font-size: 12;
+}
+
+.searchingSection {
+    position: relative;
+    width: 25vw;
+    background-color: white;
 }

@@ -23,7 +23,7 @@
         />
     </head>
     <body>
-        <section id="main_file_selector_areas">
+        <section id="main_file_selector_areas" style="display: none">
             <header class="upload_header">
                 <div class="base">
                     <div class="base_inner">
@@ -100,9 +100,50 @@
                 <div class="disclaimer_area"></div>
             </footer>
         </section>
-        <section id="main_site_data" style="display: none">
+        <section id="main_site_data" style="display: block">
             <section>
-                <div class="top_bar_thingy"></div>
+                <div class="top_bar_thingy">
+                    <button class="back_button" onclick="back_button()">&leftarrow; (Esc)</button>
+                    <p
+                        style="
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            font-family: Roboto, sans-serif;
+                            max-width: 30%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-align: center;
+                            font-weight: 700;
+                            font-family: Arimo;
+                            font-size: large;
+                            color: #3a3042;
+                        "
+                        id="pack_name_top_bar"
+                    >
+                        None
+                    </p>
+                    <p
+                        style="
+                            position: absolute;
+                            right: 5%;
+                            top: 50%;
+                            transform: translate(0px, -50%);
+                            font-family: Roboto, sans-serif;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-align: center;
+                            font-family: Arimo;
+                            font-weight: 500;
+                            font-size: medium;
+                            color: #3a3042;
+                        "
+                        id="pack_version_top_bar"
+                    >
+                        Pack version: (opening)
+                    </p>
+                </div>
             </section>
             <section id="edit_page"></section>
         </section>

@@ -339,3 +339,125 @@ span.code_box {
     font-family: monospace;
     background-color: #f0f0f0;
 }
+
+/* h1,
+h2 {
+    margin: 0;
+} */
+
+.flex {
+    display: flex;
+}
+
+.top_bar_thingy {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 3.25rem;
+    position: fixed;
+    color: white;
+    font-size: 2vmin;
+    /* background-image: url(images/Blue_wave-haikei.svg); */
+    background-color: white;
+    background-size: 100% 100%;
+}
+.top_bar_thingy * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.top_bar_thingy button {
+    background-color: #5868b6;
+    border: solid transparent;
+    border-radius: 12px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 5px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    z-index: 9999;
+}
+
+.top_bar_thingy button:after {
+    background-clip: padding-box;
+    background-color: #8093f1;
+    border: solid transparent;
+    border-radius: 12px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.top_bar_thingy button:main,
+button:focus {
+    user-select: auto;
+}
+
+.top_bar_thingy button:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.top_bar_thingy button:disabled {
+    cursor: auto;
+}
+
+.top_bar_thingy button:active:after {
+    border-width: 0 0 0px;
+}
+
+.top_bar_thingy button:active {
+    padding-bottom: 10px;
+}
+
+button.back_button {
+    left: 5%;
+    top: 50%;
+    position: absolute;
+    transform: translate(0px, -50%);
+}
+
+.box_area {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.counterTitle {
+    /* position: absolute; */
+    font-family: Arimo;
+}
+
+.counter {
+    position: absolute;
+    font-family: Nunito;
+    font-size: 12;
+}
+
+.searchingSection {
+    position: relative;
+    width: 25vw;
+    background-color: white;
+}

@@ -21,6 +21,10 @@
             href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back"
+        />
     </head>
     <body>
         <section id="main_file_selector_areas" style="display: none">
@@ -102,13 +106,15 @@
         </section>
         <section id="main_site_data" style="display: block">
             <section>
-                <div class="top_bar_thingy">
-                    <button class="back_button" onclick="back_button()">&leftarrow; (Esc)</button>
+                <div class="top_bar_thingy flex">
+                    <button class="back_button" onclick="back_button()">
+                        <span class="material-symbols-outlined"> arrow_back </span>
+                    </button>
                     <p
                         style="
-                            left: 50%;
+                            /* left: 50%; */
                             /* top: 50%; */
-                            transform: translate(-50%, -50%);
+                            /* transform: translate(-50%, -50%); */
                             font-family: Roboto, sans-serif;
                             max-width: 30%;
                             overflow: hidden;
@@ -116,8 +122,9 @@
                             text-align: center;
                             font-weight: 700;
                             font-family: Arimo;
-                            font-size: large;
+                            font-size: 18px;
                             color: #3a3042;
+                            height: fit-content;
                         "
                         id="pack_name_top_bar"
                     >
@@ -125,9 +132,9 @@
                     </p>
                     <p
                         style="
-                            right: 5%;
+                            /* right: 5%; */
                             /* top: 50%; */
-                            transform: translate(0px, -50%);
+                            /* transform: translate(0px, -50%); */
                             font-family: Roboto, sans-serif;
                             overflow: hidden;
                             white-space: nowrap;
@@ -136,6 +143,7 @@
                             font-weight: 500;
                             font-size: medium;
                             color: #3a3042;
+                            height: fit-content;
                         "
                         id="pack_version_top_bar"
                     >

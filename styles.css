@@ -350,14 +350,11 @@ h2 {
 }
 
 .top_bar_thingy {
-    /* left: 0px; */
-    /* top: 0px; */
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
     height: 4rem;
-    /* position: fixed; */
     color: #1d1d1d;
     font-size: 2vmin;
     background-color: #ddedfa;
@@ -366,7 +363,7 @@ h2 {
     border-style: solid;
     border-radius: 0.5rem;
     border-width: 0.225rem;
-    /* box-shadow: ; */
+    /* box-shadow: ; */ 
 }
 .top_bar_thingy * {
     margin: 0px;

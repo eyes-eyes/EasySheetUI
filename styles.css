@@ -13,11 +13,6 @@
     src: url("fonts/Minecraft-Seven_v2.woff2");
 }
 
-.material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-    transform: translate(-25%, -25%);
-}
-
 /*
 potential color palette?: https://coolors.co/fadc00-f8f9fa-b388eb-8093f1-3a3042
 */
@@ -361,16 +356,17 @@ h2 {
     justify-content: space-around;
     align-items: center;
     margin: 1rem;
-    height: 3.75rem;
+    height: 4rem;
     /* position: fixed; */
-    color: white;
+    color: #1d1d1d;
     font-size: 2vmin;
-    background-color: white;
+    background-color: #ddedfa;
     background-size: 100% 100%;
-    border: black;
+    border: #4ba1f1;
     border-style: solid;
     border-radius: 0.5rem;
     border-width: 0.225rem;
+    /* box-shadow: ; */
 }
 .top_bar_thingy * {
     margin: 0px;
@@ -441,12 +437,6 @@ button:focus {
 
 .top_bar_thingy button:active {
     padding-bottom: 10px;
-}
-
-button.back_button {
-    /* left: 5%; */
-    /* top: 50%; */
-    /* transform: translate(0px, -50%); */
 }
 
 .box_area {

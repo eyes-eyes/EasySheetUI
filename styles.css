@@ -348,7 +348,7 @@ span.code_box {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 1rem;
+    margin: 1rem 1rem 0.5rem 1rem;
     height: 4rem;
     color: #1d1d1d;
     font-size: 2vmin;
@@ -438,37 +438,47 @@ button:focus {
     flex-direction: row;
 }
 
-.counterTitle {
-    /* position: absolute; */
-    font-family: Arimo;
-}
-
-.counter {
-    position: absolute;
-    font-family: Nunito;
-    font-size: 12;
-}
-
 .searchingSection {
     position: relative;
     width: 25vw;
     background-color: white;
 }
 
+@media only screen and (max-width: 768px) {
+    div.counterArea div.counterBox h2 {
+        width: 80px;
+    }
+}
+
 .counterArea .counterBox h2 {
+    line-height: 1.1;
     font-family: Nunito;
-    width: fit-content;
+    font-size: 20px;
 }
 
 .counterArea .counterBox p {
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    div.counterBox {
+        padding: 0.5rem 0.75rem;
+        margin: 0.5rem 0.75rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.counterBox {
+        padding: 0.75rem 1rem;
+        margin: 0.5rem 1.5rem;
+    }
 }
 
 div.counterBox {
     width: fit-content;
-    padding: 1rem;
-    margin: 0.5rem 1.5rem;
+    /* padding: 0.75rem 1rem; */
+    /* margin: 0.5rem 1.5rem; */
     background: white;
     border: #1d1d1d;
     color: #1d1d1d;

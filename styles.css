@@ -340,11 +340,6 @@ span.code_box {
     background-color: #f0f0f0;
 }
 
-/* h1,
-h2 {
-    margin: 0;
-} */
-
 .flex {
     display: flex;
 }
@@ -363,7 +358,7 @@ h2 {
     border-style: solid;
     border-radius: 0.5rem;
     border-width: 0.225rem;
-    /* box-shadow: ; */ 
+    /* box-shadow: ; */
 }
 .top_bar_thingy * {
     margin: 0px;
@@ -377,7 +372,7 @@ h2 {
     border-radius: 12px;
     border-width: 0 0 4px;
     box-sizing: border-box;
-    color: #ffffff;
+    /* color: #ffffff; */
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -458,4 +453,32 @@ button:focus {
     position: relative;
     width: 25vw;
     background-color: white;
+}
+
+.counterArea .counterBox h2 {
+    font-family: Nunito;
+    width: fit-content;
+}
+
+.counterArea .counterBox p {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+div.counterBox {
+    width: fit-content;
+    padding: 1rem;
+    margin: 0.5rem 1.5rem;
+    background: white;
+    border: #1d1d1d;
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.225rem;
+}
+
+div.counterArea {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

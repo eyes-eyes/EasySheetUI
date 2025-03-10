@@ -112,9 +112,6 @@
                     </button>
                     <p
                         style="
-                            /* left: 50%; */
-                            /* top: 50%; */
-                            /* transform: translate(-50%, -50%); */
                             font-family: Roboto, sans-serif;
                             max-width: 30%;
                             overflow: hidden;
@@ -132,9 +129,6 @@
                     </p>
                     <p
                         style="
-                            /* right: 5%; */
-                            /* top: 50%; */
-                            /* transform: translate(0px, -50%); */
                             font-family: Roboto, sans-serif;
                             overflow: hidden;
                             white-space: nowrap;
@@ -151,7 +145,18 @@
                     </p>
                 </div>
             </section>
-            <section id="edit_page"></section>
+            <section id="edit_page" style="display: block">
+                <div class="counterArea flex">
+                    <div class="counterBox">
+                        <h2>Current textures</h2>
+                        <p id="currentTextures">000</p>
+                    </div>
+                    <div class="counterBox">
+                        <h2>Total textures</h2>
+                        <p id="totalTextures">0000</p>
+                    </div>
+                </div>
+            </section>
         </section>
     </body>
 </html>

@@ -452,7 +452,7 @@ button:focus {
 
 .counterArea .counterBox h2 {
     line-height: 1.1;
-    font-family: Nunito;
+    font-family: Arimo;
     font-size: 20px;
 }
 
@@ -464,14 +464,14 @@ button:focus {
 @media only screen and (max-width: 768px) {
     div.counterBox {
         padding: 0.5rem 0.75rem;
-        margin: 0.5rem 0.75rem;
+        margin: 0rem 0.75rem 0.5rem 0.75rem;
     }
 }
 
 @media only screen and (min-width: 768px) {
     div.counterBox {
         padding: 0.75rem 1rem;
-        margin: 0.5rem 1.5rem;
+        margin: 0rem 1.5rem 0.5rem 1.5rem;
     }
 }
 
@@ -491,4 +491,128 @@ div.counterArea {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    div.menuArea {
+        margin: 1rem 0rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.menuArea {
+        margin: 1.5rem 0rem;
+    }
+}
+
+div.menuArea {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+@media only screen and (max-width: 768px) {
+    div.currentTextures {
+        margin: 0rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.currentTextures {
+        margin: 0rem 1.5rem;
+    }
+}
+
+div.currentTextures {
+    width: 22rem;
+    height: 28rem;
+    background: white;
+    padding: 1rem 4.5rem;
+    border: #1d1d1d;
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.225rem;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    div.currentTextures h2 {
+        font-family: Arimo;
+        width: 100px;
+    }
+}
+
+div.currentTextures h2 {
+    font-family: Arimo;
+}
+
+@media only screen and (max-width: 768px) {
+    div.groupSelection,
+    div.searchingArea {
+        margin: 0rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.groupSelection,
+    div.searchingArea {
+        margin: 0rem 1.5rem;
+    }
+}
+
+div.menuAreaOther {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.groupSelection {
+    width: 22rem;
+    height: 12.5rem;
+    margin-bottom: 1.5rem;
+    background: white;
+    padding: 1rem 1rem;
+    border: #1d1d1d;
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.225rem;
+}
+
+div.groupSelectionTitle {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+div.groupSelectionTitle h2 {
+    /* margin-right: 0%; */
+    font-family: Arimo;
+}
+
+div.groupSelectionTitle h3 {
+    /* margin-left: 25%; */
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+div.searchingArea {
+    width: 22rem;
+    margin-bottom: 1.5rem;
+    height: 12.5rem;
+    background: white;
+    padding: 1rem 2rem;
+    border: #1d1d1d;
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.225rem;
+    justify-content: center;
+}
+
+div.searchingArea h2 {
+    font-family: Arimo;
 }

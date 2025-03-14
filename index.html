@@ -161,7 +161,124 @@
                         <div class="groupSelection">
                             <div class="groupSelectionTitle">
                                 <h2>Select groups</h2>
-                                <h3>Toggle</h3>
+                                <div class="toggleArea">
+                                    <h3>Toggle All</h3>
+                                    <!-- From Uiverse.io by AbanoubMagdy1 -->
+                                    <label class="switch">
+                                        <input type="checkbox" id="checkingGroups" oninput="toggle_all_groups(this.checked)" />
+                                        <div class="slider"></div>
+                                        <div class="slider-card">
+                                            <div class="slider-card-face slider-card-front"></div>
+                                            <div class="slider-card-face slider-card-back"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="grouping flex">
+                                <div class="column flex">
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="armors" class="inp-cbx" oninput="group_selected(this)" />
+                                        <label for="armors" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Armors</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="toolsets" class="inp-cbx" />
+                                        <label for="toolsets" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Tool sets</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="minerals" class="inp-cbx" />
+                                        <label for="minerals" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Minerals</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="saplings" class="inp-cbx" />
+                                        <label for="saplings" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Saplings</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="buckets" class="inp-cbx" />
+                                        <label for="buckets" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Buckets</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="foods" class="inp-cbx" />
+                                        <label for="foods" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Foods</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="beds" class="inp-cbx" />
+                                        <label for="beds" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Beds</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="signs" class="inp-cbx" />
+                                        <label for="signs" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Signs</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="doorItems" class="inp-cbx" />
+                                        <label for="doorItems" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Doors & trapdoors</span>
+                                        </label>
+                                    </div>
+                                    <!-- From Uiverse.io by vishnupprajapat -->
+                                    <div class="checkbox-wrapper-46">
+                                        <input type="checkbox" id="vehicles" class="inp-cbx" />
+                                        <label for="vehicles" class="cbx"
+                                            ><span>
+                                                <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                            ><span>Vehicles</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="column flex"></div>
+                                <div class="column flex"></div>
                             </div>
                         </div>
                         <div class="searchingArea flex">

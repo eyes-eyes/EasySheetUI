@@ -527,8 +527,19 @@ div.menuArea {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    div.currentTextures {
+        width: 22rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.currentTextures {
+        width: 40rem;
+    }
+}
+
 div.currentTextures {
-    width: 22rem;
     height: 28rem;
     background: white;
     padding: 1rem 4.5rem;
@@ -571,8 +582,19 @@ div.menuAreaOther {
     align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+    div.groupSelection {
+        width: 22rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.groupSelection {
+        width: 40rem;
+    }
+}
+
 div.groupSelection {
-    width: 22rem;
     /* height: 12.5rem; */
     height: fit-content;
     margin-bottom: 1.5rem;
@@ -590,6 +612,7 @@ div.groupSelectionTitle {
     display: inline-flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 0.5rem;
 }
 
 div.toggleArea {
@@ -637,6 +660,7 @@ div.groupSelectionTitle div.toggleArea h3 {
     background-color: #f5aeae;
     transition: 0.4s;
     border-radius: 30px;
+    user-select: none;
 }
 
 .slider-card {
@@ -741,10 +765,28 @@ div.checkbox-wrapper-46 {
     opacity: 1;
     border-radius: 50%;
 }
+
+/*
+    Changing text on checkboxes based on screen width
+*/
+
+@media only screen and (max-width: 768px) {
+    .checkbox-wrapper-46 .cbx span:last-child {
+        width: 85px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .checkbox-wrapper-46 .cbx span:last-child {
+        width: fit-content;
+    }
+}
+
 .checkbox-wrapper-46 .cbx span:last-child {
     padding-left: 8px;
     font-family: Poppins;
     line-height: 1;
+    user-select: text;
 }
 .checkbox-wrapper-46 .cbx:hover span:first-child {
     border-color: #506eec;
@@ -771,15 +813,31 @@ div.checkbox-wrapper-46 {
 }
 
 div.grouping {
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 div.column {
     flex-direction: column;
 }
 
+div.column h3 {
+    font-family: Arimo;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 768px) {
+    div.searchingArea {
+        width: 22rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.searchingArea {
+        width: 40rem;
+    }
+}
+
 div.searchingArea {
-    width: 22rem;
     margin-bottom: 1.5rem;
     height: 12.5rem;
     background: white;
@@ -792,6 +850,32 @@ div.searchingArea {
     justify-content: center;
 }
 
-div.searchingArea h2 {
+div.searchingAreaTitle {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+div.searchingArea div.searchingAreaTitle h2 {
     font-family: Arimo;
+    width: fit-content;
+    margin-bottom: 0.5rem;
+}
+
+input.searchTerm {
+    width: 30rem;
+    height: 1.5rem;
+    padding: 1rem;
+    border: #1d1d1d;
+    background: rgb(248, 249, 250);
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.18rem;
+    border-width: 0.16rem;
+    outline: none;
+}
+
+input.searchTerm:focus {
+    background: white;
+    font: bold;
 }

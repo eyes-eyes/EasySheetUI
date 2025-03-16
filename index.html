@@ -153,7 +153,7 @@
                     </div>
                     <div class="counterBox">
                         <h2>Current amount</h2>
-                        <p id="currentTextures">000</p>
+                        <p id="currentCounter">000</p>
                     </div>
                 </div>
                 <div class="menuArea flex">
@@ -460,7 +460,7 @@
                             <div class="searchingAreaTitle">
                                 <h2>Add textures</h2>
                             </div>
-                            <div class="searchBox">
+                            <div class="searchBox flex">
                                 <input
                                     type="text"
                                     class="searchTerm"
@@ -468,12 +468,20 @@
                                     placeholder="Search for textures..."
                                     oninput="search_user_input(this.value)"
                                 />
-                                <div class="toggleSearch" id="toggleSearch" onclick="toggle_all_searched()"></div>
+                                <div class="toggleSearchBackground">
+                                    <div class="toggleSearch flex" id="toggleSearch" onclick="toggle_all_searched()">
+                                        <h3>Go</h3>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="search_results" id="search_results"></div>
                         </div>
                     </div>
-                    <div class="currentTextures flex">
-                        <h2>Current textures</h2>
+                    <div class="currentTextures">
+                        <div class="currentTexturesTitle">
+                            <h2>Current textures</h2>
+                        </div>
+                        <div class="search_results" id="total_textures_input"></div>
                     </div>
                 </div>
             </section>

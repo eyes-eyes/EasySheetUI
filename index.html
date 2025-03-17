@@ -461,13 +461,7 @@
                                 <h2>Add textures</h2>
                             </div>
                             <div class="searchBox flex">
-                                <input
-                                    type="text"
-                                    class="searchTerm"
-                                    id="searchTerm"
-                                    placeholder="Search for textures..."
-                                    oninput="search_user_input(this.value)"
-                                />
+                                <input type="text" class="searchTerm" id="searchTerm" placeholder="Search for textures..." oninput="search_user_input(this.value)" />
                                 <div class="toggleSearchBackground">
                                     <div class="toggleSearch flex" id="toggleSearch" onclick="toggle_all_searched()">
                                         <h3>Go</h3>
@@ -482,6 +476,10 @@
                             <h2>Current textures</h2>
                         </div>
                         <div class="search_results" id="total_textures_input"></div>
+                        <div class="proceedArea flex">
+                            <!-- From Uiverse.io by SteveBloX -->
+                            <button class="proceedButton" onclick="proceed()">Proceed</button>
+                        </div>
                     </div>
                 </div>
             </section>

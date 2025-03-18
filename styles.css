@@ -988,11 +988,13 @@ div.searchingArea div.searchingAreaTitle h2 {
     border-radius: 0.5rem;
     border-width: 0.16rem;
     outline: none;
+    font-family: Arimo;
 }
 
 .searchTerm:focus {
     background: white;
     font: bold;
+    font-family: Arimo;
 }
 
 .toggleSearchBackground {

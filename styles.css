@@ -619,8 +619,8 @@ div.currentTextures .currentTexturesTitle h2 {
 }
 
 .clearAll:active {
-    transform: translate(214px, 5px);
-    transition-duration: 0.15s;
+    transform: translate(214px, 0px) scale(0.9);
+    transition-duration: 0.1s;
 }
 
 div.currentTextures div.search_results {
@@ -668,6 +668,7 @@ button.proceedButton:hover {
 }
 
 button.proceedButton:active {
+    transition-duration: 0.1s;
     transform: scale(0.95);
 }
 

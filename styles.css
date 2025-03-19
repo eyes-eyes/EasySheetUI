@@ -848,7 +848,7 @@ div.checkbox-wrapper-46 {
     border-radius: 3px;
     transform: scale(1);
     vertical-align: middle;
-    border: 1.5px solid #9098a9;
+    border: 1.5px solid black;
     transition: all 0.2s ease;
 }
 .checkbox-wrapper-46 .cbx span:first-child svg {

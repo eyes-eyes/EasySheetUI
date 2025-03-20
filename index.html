@@ -107,42 +107,22 @@
         <section id="main_site_data" style="display: block">
             <section>
                 <div class="top_bar_thingy flex">
-                    <button class="back_button" onclick="back_button()">
-                        <span class="material-symbols-outlined" style="transform: translate(0%, -25%)"> arrow_back </span>
-                    </button>
-                    <p
-                        style="
-                            font-family: Roboto, sans-serif;
-                            max-width: 30%;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            text-align: center;
-                            font-weight: 700;
-                            font-family: Arimo;
-                            font-size: 22px;
-                            color: #3a3042;
-                            height: fit-content;
-                        "
-                        id="pack_name_top_bar"
-                    >
-                        None
-                    </p>
-                    <p
-                        style="
-                            font-family: Roboto, sans-serif;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            text-align: center;
-                            font-family: Arimo;
-                            font-weight: 500;
-                            font-size: medium;
-                            color: #3a3042;
-                            height: fit-content;
-                        "
-                        id="pack_version_top_bar"
-                    >
-                        Pack version: (opening)
-                    </p>
+                    <div class="goBackArea flex">
+                        <div class="backButtonArea">
+                            <div class="backButtonBackground">
+                                <div class="backButton flex" onclick="back_button()">
+                                    <span class="material-symbols-outlined"> arrow_back </span>
+                                    <h3>Back</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="packTitleArea flex">
+                        <h2 class="packTitle" id="pack_name_top_bar">None</h2>
+                    </div>
+                    <div class="packVersionArea flex">
+                        <h3 class="packVersion" id="pack_version_top_bar">Pack version: (opening)</h3>
+                    </div>
                 </div>
             </section>
             <section id="edit_page" style="display: block">
@@ -461,10 +441,19 @@
                                 <h2>Add textures</h2>
                             </div>
                             <div class="searchBox flex">
-                                <input type="text" class="searchTerm" id="searchTerm" placeholder="Search for textures..." oninput="search_user_input(this.value)" />
-                                <div class="toggleSearchBackground">
-                                    <div class="toggleSearch flex" id="toggleSearch" onclick="toggle_all_searched()">
-                                        <h3>Go</h3>
+                                <input
+                                    type="text"
+                                    class="searchTerm"
+                                    id="searchTerm"
+                                    placeholder="Search for textures..."
+                                    oninput="search_user_input(this.value)"
+                                />
+
+                                <div class="toggleSearchButton">
+                                    <div class="toggleSearchBackground">
+                                        <div class="toggleSearch flex" id="toggleSearch" onclick="toggle_all_searched()">
+                                            <h3>Go</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

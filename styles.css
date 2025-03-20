@@ -188,10 +188,6 @@ div.keyinfo {
     font-weight: 500;
 }
 
-.material-symbols-outlined {
-    transform: translateY(19%);
-}
-
 span.font_bold {
     font-weight: 700;
 }
@@ -360,19 +356,63 @@ span.code_box {
     border-width: 0.225rem;
     /* box-shadow: ; */
 }
-.top_bar_thingy * {
-    margin: 0px;
-    padding: 0px;
+
+div.backButtonArea {
+    width: fit-content;
 }
 
-.top_bar_thingy button {
+div.backButtonBackground {
+    border: none;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    background: #1d1d1d;
+    width: fit-content;
+}
+
+.backButton {
+    /* margin-left: 0.5rem; */
+    padding: 0.25rem;
+    width: fit-content;
+    height: 2.5rem;
+    background-color: #e8e8e8;
+    border: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.75rem;
+    border-width: 0.16rem;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: translateY(-0.2rem);
+    transition: transform 0.1s ease;
+    user-select: none;
+}
+
+.backButton:hover {
+    transform: translateY(-0.33rem);
+}
+
+.backButton:active {
+    transform: translateY(0);
+}
+
+.backButton h3 {
+    width: fit-content;
+    height: fit-content;
+    line-height: 1;
+    font-family: Arimo;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1d1d1d;
+}
+
+/* .top_bar_thingy button {
     height: 2.5rem;
     background-color: #5868b6;
     border: solid transparent;
     border-radius: 12px;
     border-width: 0 0 4px;
     box-sizing: border-box;
-    /* color: #ffffff; */
     cursor: pointer;
     display: inline-block;
     font-size: 15px;
@@ -429,6 +469,53 @@ button:focus {
 
 .top_bar_thingy button:active {
     padding-bottom: 10px;
+} */
+
+@media only screen and (max-width: 768px) {
+    div.goBackArea,
+    div.packTitleArea,
+    div.packVersionArea {
+        max-width: 30%;
+        width: 8rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.goBackArea,
+    div.packTitleArea,
+    div.packVersionArea {
+        max-width: 30%;
+        width: 18rem;
+    }
+}
+
+div.goBackArea,
+div.packTitleArea,
+div.packVersionArea {
+    justify-content: center;
+    font-family: Arimo;
+    max-width: 30%;
+}
+
+h2.packTitle {
+    /* width: 15rem; */
+    font-weight: 700;
+    font-size: 22px;
+    white-space: nowrap;
+    text-align: center;
+    color: #1d1d1d;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h3.packVersion {
+    /* width: 15rem; */
+    font-weight: 500;
+    font-size: 16px;
+    white-space: nowrap;
+    text-align: center;
+    color: #1d1d1d;
+    overflow: hidden;
 }
 
 .box_area {
@@ -1018,11 +1105,15 @@ div.searchingArea div.searchingAreaTitle h2 {
     font-family: Arimo;
 }
 
-.toggleSearchBackground {
+.toggleSearchButton {
     margin-left: 0.5rem;
+}
+
+.toggleSearchBackground {
+    /* margin-left: 0.5rem; */
     border: none;
     cursor: pointer;
-    border-radius: 0.75em;
+    border-radius: 0.75rem;
     background: #49ae5b;
     width: 2.5rem;
 }
@@ -1035,19 +1126,19 @@ div.searchingArea div.searchingAreaTitle h2 {
     background-color: #e8e8e8;
     border: #49ae5b;
     border-style: solid;
-    border-radius: 0.75em;
+    border-radius: 0.75rem;
     border-width: 0.16rem;
     outline: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transform: translateY(-0.2em);
+    transform: translateY(-0.2rem);
     transition: transform 0.1s ease;
     user-select: none;
 }
 
 .toggleSearch:hover {
-    transform: translateY(-0.33em);
+    transform: translateY(-0.33rem);
 }
 
 .toggleSearch:active {
@@ -1060,6 +1151,7 @@ div.searchingArea div.searchingAreaTitle h2 {
     line-height: 1;
     font-family: Arimo;
     font-weight: bold;
+    font-size: 18px;
     color: #49ae5b;
 }
 

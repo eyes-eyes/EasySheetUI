@@ -357,7 +357,13 @@ span.code_box {
     /* box-shadow: ; */
 }
 
+div.goBackArea {
+    justify-content: left;
+}
+
 div.backButtonArea {
+    font-family: Arimo;
+    margin-left: 0.25rem;
     width: fit-content;
 }
 
@@ -423,7 +429,7 @@ div.backButtonBackground {
     }
 }
 
-div.goBackArea,
+/* div.goBackArea, */
 div.packTitleArea,
 div.packVersionArea {
     justify-content: center;
@@ -431,10 +437,21 @@ div.packVersionArea {
     max-width: 30%;
 }
 
+@media only screen and (max-width: 768px) {
+    h2.packTitle {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h2.packTitle {
+        font-size: 22px;
+    }
+}
+
 h2.packTitle {
     /* width: 15rem; */
     font-weight: 700;
-    font-size: 22px;
     white-space: nowrap;
     text-align: center;
     color: #1d1d1d;
@@ -442,10 +459,21 @@ h2.packTitle {
     text-overflow: ellipsis;
 }
 
+@media only screen and (max-width: 768px) {
+    h3.packVersion {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h3.packVersion {
+        font-size: 16px;
+    }
+}
+
 h3.packVersion {
     /* width: 15rem; */
     font-weight: 500;
-    font-size: 16px;
     white-space: nowrap;
     text-align: center;
     color: #1d1d1d;

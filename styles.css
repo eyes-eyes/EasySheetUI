@@ -370,8 +370,7 @@ div.backButtonBackground {
 }
 
 .backButton {
-    /* margin-left: 0.5rem; */
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
     width: fit-content;
     height: 2.5rem;
     background-color: #e8e8e8;
@@ -405,71 +404,6 @@ div.backButtonBackground {
     font-size: 18px;
     color: #1d1d1d;
 }
-
-/* .top_bar_thingy button {
-    height: 2.5rem;
-    background-color: #5868b6;
-    border: solid transparent;
-    border-radius: 12px;
-    border-width: 0 0 4px;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 5px;
-    margin: 0;
-    outline: none;
-    overflow: visible;
-    padding: 13px 19px;
-    text-align: center;
-    text-transform: uppercase;
-    touch-action: manipulation;
-    transform: translateZ(0);
-    transition: filter 0.2s;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    z-index: 9999;
-}
-
-.top_bar_thingy button:after {
-    background-clip: padding-box;
-    background-color: #8093f1;
-    border: solid transparent;
-    border-radius: 12px;
-    border-width: 0 0 4px;
-    bottom: -4px;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-
-.top_bar_thingy button:main,
-button:focus {
-    user-select: auto;
-}
-
-.top_bar_thingy button:hover:not(:disabled) {
-    filter: brightness(1.1);
-}
-
-.top_bar_thingy button:disabled {
-    cursor: auto;
-}
-
-.top_bar_thingy button:active:after {
-    border-width: 0 0 0px;
-}
-
-.top_bar_thingy button:active {
-    padding-bottom: 10px;
-} */
 
 @media only screen and (max-width: 768px) {
     div.goBackArea,
@@ -700,7 +634,7 @@ div.currentTextures .currentTexturesTitle h2 {
     overflow: hidden;
     gap: 2px;
     /* transform: translate(214px, 0px); */
-    transition: all 0.1s;
+    transition: all 0.1s ease;
     z-index: 2;
     grid-row: 1;
     grid-column: 1;

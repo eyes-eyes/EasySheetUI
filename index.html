@@ -440,7 +440,13 @@
                                     <h2>Add textures</h2>
                                 </div>
                                 <div class="searchBox flex">
-                                    <input type="text" class="searchTerm" id="searchTerm" placeholder="Search for textures..." oninput="search_user_input(this.value)" />
+                                    <input
+                                        type="text"
+                                        class="searchTerm"
+                                        id="searchTerm"
+                                        placeholder="Search for textures..."
+                                        oninput="search_user_input(this.value)"
+                                    />
 
                                     <div class="toggleSearchButton">
                                         <div class="toggleSearchBackground">
@@ -528,7 +534,9 @@
                             </div>
                         </div>
                         <div class="hovered_outputArea flex">
-                            <p class="hovered_output flex" id="hovered_output">assets/&#8203;minecraft/&#8203;textures/&#8203;item/&#8203;netherite_sword&#8203;.png</p>
+                            <p class="hovered_output flex" id="hovered_output">
+                                assets/&#8203;minecraft/&#8203;textures/&#8203;item/&#8203;netherite_sword&#8203;.png
+                            </p>
                         </div>
                     </div>
                     <div class="extras flex">
@@ -548,12 +556,32 @@
                             </div>
                             <!-- From Uiverse.io by vishnupprajapat -->
                             <div class="checkbox-wrapper-46">
-                                <input type="checkbox" name="mergeStuff" id="mergeStuff" class="inp-cbx" />
+                                <input type="checkbox" name="mergeStuff" id="mergeStuff" oninput="generate_final_image()" checked="" class="inp-cbx" />
                                 <label for="mergeStuff" class="cbx"
                                     ><span>
                                         <svg viewBox="0 0 12 10" height="10px" width="12px">
                                             <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
                                     ><span>Merge doors</span>
+                                </label>
+                            </div>
+                            <!-- From Uiverse.io by vishnupprajapat -->
+                            <div class="checkbox-wrapper-46">
+                                <input type="checkbox" name="deconstruct" id="deconstruct" oninput="generate_final_image()" class="inp-cbx" />
+                                <label for="deconstruct" class="cbx"
+                                    ><span>
+                                        <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                    ><span>Deconstruct</span>
+                                </label>
+                            </div>
+                            <!-- From Uiverse.io by vishnupprajapat -->
+                            <div class="checkbox-wrapper-46">
+                                <input type="checkbox" name="sortInGroups" id="sortInGroups" oninput="generate_final_image()" class="inp-cbx" />
+                                <label for="sortInGroups" class="cbx"
+                                    ><span>
+                                        <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                    ><span>Sort in groups</span>
                                 </label>
                             </div>
                         </div>
@@ -568,7 +596,13 @@
                     </div>
                     <div class="downloadArea"></div>
                 </div>
-                <div class="selectionArea flex"></div>
+                <div class="selectionArea flex">
+                    <div class="upscaleExport flex">
+                        <div class="upscaleExportTitle">
+                            <h2>Upscale export</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>

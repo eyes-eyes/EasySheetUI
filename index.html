@@ -499,11 +499,34 @@
             </section>
         </section>
         <section id="generate_page" style="display: block">
-            <section>
-                <div class="canvasSpriteSheets" id="canvasSpriteSheets">
-                    <canvas id="out_canvas" onmousemove="hover_canvas(event,false)" onclick="hover_canvas(event,true)"> </canvas>
+            <div class="generatePageArea grid grid_col_1 grid_col_3">
+                <div class="selectionArea flex">
+                    <div class="currentSprite flex">
+                        <h2>Current sprite</h2>
+                        <div class="currentSpriteOptions">
+                            <div>
+                                <input type="checkbox" name="hover_update_on_move" id="hover_update_on_move" />
+                                <label for="hover_update_on_move">on move</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="hover_full_name" id="hover_full_name" />
+                                <label for="hover_full_name">file path</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+                <div class="selectionArea flex">
+                    <div class="canvasArea">
+                        <div class="canvasSpriteSheets" id="canvasSpriteSheets">
+                            <canvas id="out_canvas" onmousemove="hover_canvas(event,false)" onclick="hover_canvas(event,true)"> </canvas>
+                            <!-- <image src="images/ILikeSharingCat.png" id="I_like_sharing_cat_loading"></image> -->
+                        </div>
+                    </div>
+                    <div class="downloadArea"></div>
+                </div>
+                <div class="selectionArea flex"></div>
+            </div>
         </section>
     </body>
 </html>

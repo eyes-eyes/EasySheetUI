@@ -1156,3 +1156,23 @@ div.searchingArea div.search_results > div {
     /* z-index: 1; */
     background-color: #e8e8e8;
 }
+
+/* .canvasSpriteSheets {
+    overflow: clip;
+    position: absolute;
+    width: 70vmin;
+    height: 70vmin;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    background-color: #dbdad1;
+    border-radius: 7px;
+} */
+
+/* .canvasSpriteSheets canvas {
+    image-rendering: pixelated;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+} */

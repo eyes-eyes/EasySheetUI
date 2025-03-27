@@ -973,7 +973,7 @@ div.checkbox-wrapper-46 {
 }
 
 .checkbox-wrapper-46 .cbx span:last-child {
-    padding-left: 8px;
+    padding-left: 4px;
     font-family: Poppins;
     line-height: 1;
     user-select: text;
@@ -1179,9 +1179,10 @@ div.selectionArea {
 }
 
 div.currentSprite {
-    width: 10rem;
+    width: 12rem;
     height: fit-content;
-    padding: 1rem;
+    padding: 0.75rem;
+    margin: 0.75rem;
     background-color: white;
     border: #1d1d1d;
     color: #1d1d1d;
@@ -1194,15 +1195,93 @@ div.currentSprite {
     flex-direction: column;
 }
 
-div.currentSprite h2 {
+div.currentSpriteTitle {
+    margin-bottom: 0.25rem;
+}
+
+div.currentSpriteTitle h2 {
     font-family: Arimo;
     line-height: 1;
     height: fit-content;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 div.currentSpriteOptions {
     text-align: start;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+div.currentSprite div.currentSpriteOptions div.checkbox-wrapper-46 {
+    margin-left: 0.25rem;
+}
+
+div.currentSprite div.currentSpriteOptions .checkbox-wrapper-46 .cbx span:last-child {
+    user-select: none;
+    font-size: 14px;
+}
+
+/* div.currentSprite div.currentSpriteOptions .checkbox-wrapper-46 .cbx span:first-child {
+    width: 16px;
+    height: 16px;
+} */
+
+div.hovered_outputArea {
+    justify-content: center;
+    padding: 0.5rem;
+    align-items: center;
+    text-align: start;
+    width: 10rem;
+    /* height: 9rem; */
+    height: fit-content;
+    background-color: #ddedfa;
+    background-size: 100% 100%;
+    border: #4ba1f1;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.15rem;
+}
+
+p.hovered_output {
+    display: inline-block;
+    max-width: 100%;
+    height: fit-content;
+    text-wrap: wrap;
+    word-break: break-word;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 14px;
+}
+
+div.extras {
+    width: 12rem;
+    height: fit-content;
+    padding: 0.75rem;
+    background-color: white;
+    border: #1d1d1d;
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.225rem;
+    box-shadow: 0px 10px 20px -10px #1d1d1d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.extrasTitle {
+    margin-bottom: 0.5rem;
+}
+
+div.extrasTitle h2 {
+    font-family: Arimo;
+    line-height: 1;
+    height: fit-content;
+    font-size: 20px;
+}
+
+div.extras div.extrasOptions .checkbox-wrapper-46 .cbx span:last-child {
+    font-size: 14px;
 }
 
 /* .canvasSpriteSheets {

@@ -502,16 +502,59 @@
             <div class="generatePageArea grid grid_col_1 grid_col_3">
                 <div class="selectionArea flex">
                     <div class="currentSprite flex">
-                        <h2>Current sprite</h2>
+                        <div class="currentSpriteTitle">
+                            <h2>Current sprite</h2>
+                        </div>
                         <div class="currentSpriteOptions">
-                            <div>
-                                <input type="checkbox" name="hover_update_on_move" id="hover_update_on_move" />
-                                <label for="hover_update_on_move">on move</label>
+                            <!-- From Uiverse.io by vishnupprajapat -->
+                            <div class="checkbox-wrapper-46">
+                                <input type="checkbox" name="hover_update_on_move" id="hover_update_on_move" class="inp-cbx" />
+                                <label for="hover_update_on_move" class="cbx"
+                                    ><span>
+                                        <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                    ><span>on move</span>
+                                </label>
                             </div>
-
-                            <div>
-                                <input type="checkbox" name="hover_full_name" id="hover_full_name" />
-                                <label for="hover_full_name">file path</label>
+                            <!-- From Uiverse.io by vishnupprajapat -->
+                            <div class="checkbox-wrapper-46">
+                                <input type="checkbox" name="hover_full_name" id="hover_full_name" class="inp-cbx" />
+                                <label for="hover_full_name" class="cbx"
+                                    ><span>
+                                        <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                    ><span>file path</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="hovered_outputArea flex">
+                            <p class="hovered_output flex" id="hovered_output">assets/&#8203;minecraft/&#8203;textures/&#8203;item/&#8203;netherite_sword&#8203;.png</p>
+                        </div>
+                    </div>
+                    <div class="extras flex">
+                        <div class="extrasTitle">
+                            <h2>Extras</h2>
+                        </div>
+                        <div class="extrasOptions">
+                            <!-- From Uiverse.io by vishnupprajapat -->
+                            <div class="checkbox-wrapper-46">
+                                <input type="checkbox" name="export_preview_color" id="export_preview_color" class="inp-cbx" />
+                                <label for="export_preview_color" class="cbx"
+                                    ><span>
+                                        <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                    ><span>Export background</span>
+                                </label>
+                            </div>
+                            <!-- From Uiverse.io by vishnupprajapat -->
+                            <div class="checkbox-wrapper-46">
+                                <input type="checkbox" name="mergeStuff" id="mergeStuff" class="inp-cbx" />
+                                <label for="mergeStuff" class="cbx"
+                                    ><span>
+                                        <svg viewBox="0 0 12 10" height="10px" width="12px">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline></svg></span
+                                    ><span>Merge doors</span>
+                                </label>
                             </div>
                         </div>
                     </div>

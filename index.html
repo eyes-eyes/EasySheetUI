@@ -629,6 +629,38 @@
                             </div>
                         </div>
                     </div>
+                    <div class="view flex">
+                        <div class="viewTitle">
+                            <h2>View options</h2>
+                        </div>
+                        <div class="customWidth flex">
+                            <div class="customWidthTitle flex">
+                                <h3>Custom width</h3>
+                            </div>
+                            <input
+                                type="number"
+                                class="customWidthInput"
+                                id="width_input_generate"
+                                required
+                                maxlength="5"
+                                max="16384"
+                                min="0"
+                                oninput="this.valueAsNumber = Math.min(Math.max(this.valueAsNumber,this.min),this.max);generate_final_image()"
+                            />
+                        </div>
+                        <div class="backgroundColor flex">
+                            <div class="backgroundColorTitle">
+                                <h3>Background color</h3>
+                            </div>
+                            <input
+                                type="color"
+                                class="backgroundColorInput"
+                                id="preview_background_color_input"
+                                value="#dbdad1"
+                                oninput="document.getElementById('canvasSpriteSheets').style.backgroundColor = this.value"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

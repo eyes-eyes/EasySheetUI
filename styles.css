@@ -1183,6 +1183,7 @@ div.currentSprite {
     height: fit-content;
     padding: 0.75rem;
     margin: 0.75rem;
+    margin-top: 0;
     background-color: white;
     border: #1d1d1d;
     color: #1d1d1d;
@@ -1257,6 +1258,8 @@ div.extras {
     width: 12rem;
     height: fit-content;
     padding: 0.75rem;
+    margin: 0.75rem;
+    margin-top: 0;
     background-color: white;
     border: #1d1d1d;
     color: #1d1d1d;
@@ -1289,30 +1292,44 @@ div.extrasOptions {
     width: 100%;
 }
 
-/* .canvasSpriteSheets {
-    overflow: clip;
-    position: absolute;
-    width: 70vmin;
-    height: 70vmin;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
-    background-color: #dbdad1;
-    border-radius: 7px;
-} */
+@media only screen and (max-width: 768px) {
+    div.canvasSpriteSheets {
+        width: 22rem;
+        height: 22rem;
+    }
+}
 
-/* .canvasSpriteSheets canvas {
+@media only screen and (min-width: 768px) {
+    div.canvasSpriteSheets {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+.canvasSpriteSheets {
+    overflow: clip;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 45%; */
+    /* transform: translate(-50%, -50%); */
+    background-color: #dbdad1;
+    border-radius: 0.5rem;
+}
+
+.canvasSpriteSheets canvas {
     image-rendering: pixelated;
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     position: absolute;
-} */
+}
 
 div.upscaleExport {
     width: 12rem;
     height: fit-content;
     padding: 0.75rem;
+    margin: 0.75rem;
+    margin-top: 0;
     background-color: white;
     border: #1d1d1d;
     color: #1d1d1d;
@@ -1373,8 +1390,10 @@ div.upscaleExportOptions {
 }
 
 .radio-input {
-    position: absolute;
+    /* position: absolute; */
     opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .radio-input:checked + .radio-label {
@@ -1416,4 +1435,107 @@ div.upscaleExportOptions {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+div.view {
+    width: 12rem;
+    height: fit-content;
+    padding: 0.75rem;
+    margin: 0.75rem;
+    margin-top: 0;
+    background-color: white;
+    border: #1d1d1d;
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.225rem;
+    box-shadow: 0px 10px 20px -10px #1d1d1d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.viewTitle {
+    margin-bottom: 0.5rem;
+}
+
+div.view div.viewTitle h2 {
+    font-family: Arimo;
+    line-height: 1;
+    height: fit-content;
+    font-size: 20px;
+}
+
+div.customWidth {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.customWidthTitle {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+div.view div.customWidthTitle h3 {
+    font-family: Arimo;
+    line-height: 1;
+    height: fit-content;
+    font-size: 16px;
+}
+
+input.customWidthInput {
+    width: 6rem;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: #1d1d1d;
+    background: rgb(248, 249, 250);
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.16rem;
+    outline: none;
+    font-family: Arimo;
+}
+
+input.customWidthInput:focus {
+    background: white;
+    font: bold;
+    font-family: Arimo;
+}
+
+div.backgroundColor {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.backgroundColorTitle {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+div.view div.backgroundColorTitle h3 {
+    font-family: Arimo;
+    line-height: 1;
+    height: fit-content;
+    font-size: 16px;
+}
+
+input.backgroundColorInput {
+    width: 3rem;
+    height: 3rem;
+    padding: 0.25rem;
+    /* margin-bottom: 0.5rem; */
+    border: #1d1d1d;
+    background: rgb(248, 249, 250);
+    color: #1d1d1d;
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-width: 0.16rem;
+    outline: none;
+    font-family: Arimo;
 }

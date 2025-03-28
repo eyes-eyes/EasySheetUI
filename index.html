@@ -440,13 +440,7 @@
                                     <h2>Add textures</h2>
                                 </div>
                                 <div class="searchBox flex">
-                                    <input
-                                        type="text"
-                                        class="searchTerm"
-                                        id="searchTerm"
-                                        placeholder="Search for textures..."
-                                        oninput="search_user_input(this.value)"
-                                    />
+                                    <input type="text" class="searchTerm" id="searchTerm" placeholder="Search for textures..." oninput="search_user_input(this.value)" />
 
                                     <div class="toggleSearchButton">
                                         <div class="toggleSearchBackground">
@@ -534,9 +528,7 @@
                             </div>
                         </div>
                         <div class="hovered_outputArea flex">
-                            <p class="hovered_output flex" id="hovered_output">
-                                assets/&#8203;minecraft/&#8203;textures/&#8203;item/&#8203;netherite_sword&#8203;.png
-                            </p>
+                            <p class="hovered_output flex" id="hovered_output">assets/&#8203;minecraft/&#8203;textures/&#8203;item/&#8203;netherite_sword&#8203;.png</p>
                         </div>
                     </div>
                     <div class="extras flex">
@@ -659,6 +651,33 @@
                                 value="#dbdad1"
                                 oninput="document.getElementById('canvasSpriteSheets').style.backgroundColor = this.value"
                             />
+                        </div>
+                    </div>
+                    <div class="displayMethods flex">
+                        <div class="displayMethodsTitle">
+                            <h2>Display by</h2>
+                        </div>
+                        <div class="displayMethodsOptions flex">
+                            <!-- From Uiverse.io by coding-masala -->
+                            <div class="radio-group">
+                                <input class="radio-input" name="radio-group" id="option3" type="radio" checked="" />
+                                <label class="radio-label" for="option3">
+                                    <span class="radio-inner-circle"></span>
+                                    User Input
+                                </label>
+
+                                <input class="radio-input" name="radio-group" id="option2" type="radio" />
+                                <label class="radio-label" for="option2">
+                                    <span class="radio-inner-circle"></span>
+                                    Color
+                                </label>
+
+                                <input class="radio-input" name="radio-group" id="option1" type="radio" />
+                                <label class="radio-label" for="option1">
+                                    <span class="radio-inner-circle"></span>
+                                    Height
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>

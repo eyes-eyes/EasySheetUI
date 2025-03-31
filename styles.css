@@ -1568,3 +1568,8 @@ div.displayMethodsTitle h2 {
     height: fit-content;
     font-size: 20px;
 }
+
+div.displayMethodsOptions {
+    width: 100%;
+    flex-direction: column;
+}

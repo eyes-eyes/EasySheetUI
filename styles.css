@@ -1573,3 +1573,7 @@ div.displayMethodsOptions {
     width: 100%;
     flex-direction: column;
 }
+
+div.displayMethodsOptions div.checkbox-wrapper-46 {
+    margin-left: 0.5rem;
+}

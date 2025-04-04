@@ -226,7 +226,7 @@ div.main_file_selector {
     /* width: 45%; */
 }
 
-div.dragDrop {
+/* div.dragDrop {
     position: relative;
     height: 100%;
     border-radius: 1.5rem;
@@ -236,6 +236,20 @@ div.dragDrop {
     justify-content: center;
     user-select: none;
     flex-direction: column;
+} */
+
+label.dragDrop {
+    position: relative;
+    padding: 2rem;
+    height: 100%;
+    border-radius: 1.5rem;
+    border: 2px dashed #000000;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    user-select: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 /* Only when user is dragging zip file
@@ -245,22 +259,23 @@ div.dragDrop:hover {
 
 div.dragDrop p {
     padding: 0;
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    /* margin-top: 1rem; */
+    /* margin-left: 0.5rem; */
+    /* margin-right: 0.5rem; */
     line-height: 1;
     font-size: 20px;
 }
 
 input.file_upload {
-    overflow: hidden;
+    display: none;
+    /* overflow: hidden;
     cursor: pointer;
     background: #29b586;
     padding: 0.5rem;
     border-radius: 0.75rem;
     margin: 1rem 0.5rem;
     width: fit-content;
-    max-width: 100%;
+    max-width: 100%; */
 }
 
 input.file_upload:hover {

@@ -27,7 +27,7 @@
         />
     </head>
     <body>
-        <section id="main_file_selector_areas" style="display: none">
+        <section id="main_file_selector_areas" style="display: block">
             <header class="upload_header">
                 <div class="base">
                     <div class="base_inner">
@@ -73,7 +73,8 @@
                             </div>
                             <div class="main_file_selector">
                                 <div class="dragDrop flex">
-                                    <p>Click or drop Zip Resource Pack</p>
+                                    <!-- <p>Click or drop Zip Resource Pack</p> -->
+                                    <label for="input_main_upload" class="dragDrop">Click or drop Zipped Resource Pack</label>
                                     <input class="file_upload" type="file" accept="application/x-zip-compressed" id="input_main_upload" />
                                 </div>
                             </div>
@@ -100,11 +101,8 @@
                     </div>
                 </div>
             </div>
-            <footer class="footer">
-                <div class="disclaimer_area"></div>
-            </footer>
         </section>
-        <section id="main_site_data" style="display: block">
+        <section id="main_site_data" style="display: none">
             <section>
                 <div class="top_bar_thingy flex">
                     <div class="goBackArea flex">
@@ -124,7 +122,7 @@
                         <h3 class="packVersion" id="pack_version_top_bar">Pack version: (opening)</h3>
                     </div>
                 </div>
-                <section id="edit_page" style="display: none">
+                <section id="edit_page" style="display: block">
                     <div class="counterArea flex">
                         <div class="counterBox">
                             <h2>Total amount</h2>
@@ -498,7 +496,7 @@
                 </section>
             </section>
         </section>
-        <section id="generate_page" style="display: block">
+        <section id="generate_page" style="display: none">
             <div class="generatePageArea grid grid_col_1 grid_col_3">
                 <div class="selectionArea flex">
                     <div class="currentSprite flex">
@@ -683,5 +681,8 @@
                 </div>
             </div>
         </section>
+        <footer class="footer">
+            <div class="disclaimer_area"></div>
+        </footer>
     </body>
 </html>

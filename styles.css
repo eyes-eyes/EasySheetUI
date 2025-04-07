@@ -17,22 +17,105 @@
 potential color palette?: https://coolors.co/fadc00-f8f9fa-b388eb-8093f1-3a3042
 */
 
+:root {
+    /* Colors */
+    --clr-bg: #f8f9fa;
+    --clr-text: #1d1d1d;
+    --clr-keyinfo-bg: #fadc00;
+    --clr-moreinfo-bg: #edf0f2;
+    --clr-code-bg: #f0f0f0;
+    --clr-code-border: #d4d4d4;
+    --clr-border-dashed: #1d1d1d;
+    --clr-hover-bg: #fff;
+
+    /* Fonts */
+    --font-main: Poppins, Arial, Helvetica, sans-serif;
+    --font-heading: Poppins, sans-serif;
+    --font-code: monospace;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fs-sm: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2.2rem;
+    --fs-3xl: 3rem;
+    --fs-4xl: 3.75rem;
+    --lh-tight: 1;
+    --lh-normal: 1.2;
+    --lh-relaxed: 1.75rem;
+
+    /* Spacing */
+    --space-xxs: 0.125rem;
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.8rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-header-py-top: 1.875rem;
+    --space-header-py-bottom: 0.625rem;
+    --space-container-max-w: 1296px;
+
+    /* Borders */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1.5rem;
+    --border-width-sm: 1px;
+    --border-width-md: 2px;
+}
+
 * {
     box-sizing: border-box;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: 0;
-}
-
-body {
     padding: 0;
     margin: 0;
-    background: rgb(248, 249, 250);
+}
+html {
+    font-family: var(--font-main);
+}
+body {
+    background: var(--clr-bg);
+    color: var(--clr-text);
 }
 
-html {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    /* font-size: 16px; */
+/* Layout Utilities */
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.gap-sm {
+    gap: var(--space-sm);
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.text-center {
+    text-align: center;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
 }
 
 .upload_header {

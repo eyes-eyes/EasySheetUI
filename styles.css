@@ -119,6 +119,11 @@ body {
 .h-full {
     height: 100%;
 }
+
+/* display utilites */
+.step {
+    display: none;
+}
 .active {
     display: block;
 }
@@ -288,10 +293,6 @@ span.code_box {
     border-radius: 4px;
     font-family: monospace;
     background-color: #f0f0f0;
-}
-
-.flex {
-    display: flex;
 }
 
 .top_bar_thingy {
@@ -1544,10 +1545,10 @@ div.displayMethodsOptions div.checkbox-wrapper-46 {
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-    .base {
+    div.base {
         padding-top: calc(var(--space-xl) * 3.5);
     }
-    .easysheet_info {
+    div.easysheet_info {
         grid-column: span 2 / span 2;
     }
     div.grid_col_3 {
@@ -1558,11 +1559,11 @@ div.displayMethodsOptions div.checkbox-wrapper-46 {
     }
 }
 @media only screen and (max-width: 768px) {
-    .body .base {
+    div.body div.base {
         padding-top: var(--space-xl);
         padding-bottom: var(--space-md);
     }
-    .main_file_selector {
+    div.main_file_selector {
         margin-top: var(--space-md);
         margin-bottom: var(--space-md);
         height: 8rem; /* Keep specific height maybe */

@@ -1,344 +1,283 @@
+/*
+potential color palette?: https://coolors.co/fadc00-f8f9fa-b388eb-8093f1-3a3042
+*/
+
+/* fonts/Minecraft-Tenv2.woff */
+/* fonts/MinecraftTen.woff */
+/* fonts/Minecraft-Seven_v2.woff2 */
 @font-face {
     font-family: "MinecraftTenv2";
     src: url("fonts/Minecraft-Tenv2.woff");
 }
-
 @font-face {
     font-family: "MinecraftTen";
     src: url("fonts/MinecraftTen.woff");
 }
-
 @font-face {
     font-family: "MinecraftSevenV2";
     src: url("fonts/Minecraft-Seven_v2.woff2");
 }
 
-/*
-potential color palette?: https://coolors.co/fadc00-f8f9fa-b388eb-8093f1-3a3042
-*/
+:root {
+    /* Colors */
+    --clr-bg: #f8f9fa;
+    --clr-text: #1d1d1d;
+    --clr-keyinfo-bg: #fadc00;
+    --clr-moreinfo-bg: #edf0f2;
+    --clr-code-bg: #f0f0f0;
+    --clr-code-border: #d4d4d4;
+    --clr-border-dashed: #1d1d1d;
+    --clr-hover-bg: #fff;
+
+    /* Fonts */
+    --font-main: Poppins, Arial, Helvetica, sans-serif;
+    --font-heading: Poppins, sans-serif;
+    --font-code: monospace;
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fs-sm: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2.2rem;
+    --fs-3xl: 3rem;
+    --fs-4xl: 3.75rem;
+    --lh-tight: 1;
+    --lh-normal: 1.2;
+    --lh-relaxed: 1.75rem;
+
+    /* Spacing */
+    --space-xxs: 0.125rem;
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.8rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-header-py-top: 1.875rem;
+    --space-header-py-bottom: 0.625rem;
+    --space-container-min-w: 768px;
+    --space-container-max-w: 1296px;
+
+    /* Borders */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1.5rem;
+    --border-width-sm: 1px;
+    --border-width-md: 2px;
+}
 
 * {
     box-sizing: border-box;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: 0;
-}
-
-body {
     padding: 0;
     margin: 0;
-    background: rgb(248, 249, 250);
 }
-
 html {
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    /* font-size: 16px; */
+    font-family: var(--font-main);
+}
+body {
+    background: var(--clr-bg);
+    color: var(--clr-text);
 }
 
-.upload_header {
-    position: relative;
+/* Layout Utilities */
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+.gap-sm {
+    gap: var(--space-sm);
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.text-center {
+    text-align: center;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.active {
+    display: block;
 }
 
-header div.base {
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-
+/* landing page base structure */
 div.base {
     position: relative;
     width: 100%;
 }
 
-div.base div.base_inner {
+div.base_inner {
     position: relative;
-    width: 1296px;
-    max-width: 100%;
-    padding: 0 2rem;
+    max-width: var(--space-container-max-w);
+    padding: 0 var(--space-xl);
     margin: 0 auto;
 }
 
+/* landing page header */
+.upload_header {
+    position: relative;
+}
+.upload_header .base {
+    padding-top: var(--space-header-py-top);
+    padding-bottom: var(--space-header-py-bottom);
+}
 div.brand_name h1 {
     display: inline-block;
-    font-family: Poppins, sans-serif;
+    font-family: var(--font-heading);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-2xl);
+    line-height: var(--lh-normal);
+    color: var(--clr-text);
 }
-
-h1 {
-    font-weight: bold;
-    font-size: 2.2rem;
-    color: black;
-    line-height: 1.2;
-    padding: 0;
-    margin: 0;
-}
-
 div.brand_name span {
     display: block;
-    width: 100%;
     text-overflow: clip;
     overflow: hidden;
 }
 
+/* landing page body */
 div.body div.base {
-    padding-bottom: 3rem;
+    padding-bottom: var(--space-2xl);
     padding-right: 0;
     padding-left: 0;
-    border: 0;
 }
-
-div.base {
-    padding-top: 2rem;
-}
-
-@media only screen and (min-width: 768px) {
-    div.base {
-        padding-top: 7rem;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    div.body div.base {
-        padding-bottom: 1rem;
-    }
-}
-
 div.easysheet_flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
-
-div.easysheet_flex div.easysheet_body {
-    width: 1296px;
-    padding: 0;
-    max-width: 100%;
+div.easysheet_body {
+    max-width: var(--space-container-max-w);
     margin: 0 auto;
 }
-
 div.easysheet_info {
     z-index: 1;
-    grid-column: span 2 / span 2;
+    padding: 0 var(--space-xl);
 }
 
-@media only screen and (min-width: 768px) {
-    div.grid_col_3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    div.grid_col_1 {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    div.main_file_selector {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        height: 8rem;
-    }
-}
-
-div.easysheet_flex div.easysheet_info {
-    padding: 0 2rem;
-}
-
-div.easysheet_flex div.intro_container {
-    position: relative;
-    max-width: 100%;
-}
-
-/*
-The big text
-*/
-div.easysheet_flex div.intro_container p {
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: Poppins, sans-serif;
-    color: black;
-    margin-bottom: 0;
-    margin-top: 0;
-    line-height: 1;
-}
-
-@media only screen and (min-width: 1200px) {
-    div.easysheet_flex div.intro_container p {
-        font-size: 3.75rem;
-    }
-}
-
-div.keyinfo p {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    margin: 0;
-}
-
+/* landing page main content area */
+/* short statement */
 div.keyinfo {
-    padding: 0.25rem 0.5rem;
-    background-color: rgb(250, 220, 0);
-    border-radius: 0.75rem;
-    align-items: center;
+    padding: var(--space-xs) var(--space-sm);
+    background-color: var(--clr-keyinfo-bg);
+    border-radius: var(--radius-md);
     width: fit-content;
-    display: flex;
-    margin-bottom: 1.8rem;
+    display: inline-flex;
+    margin-bottom: var(--space-lg);
     position: relative;
-    font-family: Poppins, sans-serif;
-    font-weight: 500;
+    font-family: var(--font-heading);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-md);
+    line-height: var(--lh-relaxed);
 }
-
 span.font_bold {
-    font-weight: 700;
+    font-weight: var(--fw-bold);
 }
 
-div.grid {
-    display: grid;
-}
-
-@media only screen and (min-width: 768px) {
-    div.easysheet_features {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
-div.easysheet_features {
-    margin-top: 3rem;
-    font-size: 18px;
-}
-
-div.gap {
-    gap: 0.5rem;
-}
-
-div.flex_row {
-    flex-direction: row;
-}
-
-div.flex {
-    display: flex;
-}
-
-div.main_file_selector {
-    text-align: center;
-    align-items: center;
-    padding: 0 2rem;
-    /* width: 45%; */
-}
-
-/* div.dragDrop {
+/* big text */
+div.intro_container {
     position: relative;
-    height: 100%;
-    border-radius: 1.5rem;
-    border: 2px dashed #000000;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    user-select: none;
-    flex-direction: column;
-} */
+}
+div.intro_container p {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-bold);
+    font-family: var(--font-heading);
+    color: var(--clr-text);
+    line-height: var(--lh-tight);
+}
+div.easysheet_features {
+    margin-top: var(--space-2xl);
+    font-size: var(--fs-md);
+}
 
+/* file select or drop zone */
+div.main_file_selector {
+    padding: 0 var(--space-xl);
+}
 label.dragDrop {
     position: relative;
-    padding: 2rem;
-    height: 100%;
-    border-radius: 1.5rem;
-    border: 2px dashed #000000;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: var(--border-width-md) dashed var(--clr-border-dashed);
     user-select: none;
-    flex-direction: column;
     cursor: pointer;
+    font-size: var(--fs-lg);
+    line-height: var(--lh-tight);
+    font-family: var(--font-heading);
 }
-
-/* Only when user is dragging zip file
-div.dragDrop:hover {
-    background: grey;
-} */
-
-div.dragDrop p {
-    padding: 0;
-    /* margin-top: 1rem; */
-    /* margin-left: 0.5rem; */
-    /* margin-right: 0.5rem; */
-    line-height: 1;
-    font-size: 20px;
+label.dragDrop:hover {
+    background: var(--clr-hover-bg);
 }
-
 input.file_upload {
     display: none;
-    /* overflow: hidden;
-    cursor: pointer;
-    background: #29b586;
-    padding: 0.5rem;
-    border-radius: 0.75rem;
-    margin: 1rem 0.5rem;
-    width: fit-content;
-    max-width: 100%; */
 }
 
-input.file_upload:hover {
-    background: #65cca9;
-}
-
-div.moreinfo_area div.moreinfo_inner {
-    position: relative;
-    width: 1296px;
-    max-width: 100%;
-    padding: 0 2rem;
-    margin: 0 auto;
-}
-
+/* more info area */
 div.moreinfo_area {
-    margin-bottom: 4rem;
+    margin-bottom: var(--space-3xl);
 }
-
-div.moreinfo p {
-    font-size: 1.5rem;
+div.moreinfo_inner {
+    position: relative;
+    max-width: var(--space-container-max-w);
+    margin: 0 auto;
+    padding: 0 var(--space-xl);
 }
-
 div.moreinfo {
-    background: #edf0f2;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 0.75rem;
-    padding: 1rem;
-    flex-wrap: wrap;
+    background: var(--clr-moreinfo-bg);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    gap: var(--space-md); /* Keep gap here as it's specific to .moreinfo layout */
 }
-
-img.creeperhead {
+div.moreinfo p {
+    font-size: var(--fs-xl);
+    line-height: var(--lh-tight);
+}
+/* img.creeperhead {
     width: 80px;
     border-radius: 0.25rem;
+} */
+div.github_info {
+    color: var(--clr-text);
 }
-
+.github_info a {
+    text-decoration: underline;
+    color: inherit;
+}
 img.github_logo {
     width: 30px;
     height: 30px;
-    margin: 0 8px;
-    line-height: 1;
+    margin: 0 var(--space-sm);
+    /* line-height: var(--lh-tight); */
 }
-
-a {
-    display: flex;
-    justify-content: center;
-}
-
-div.github_info {
-    color: black;
-}
-
 div.github_info p {
-    font-weight: 700;
-    line-height: 1;
-    margin: auto 0;
-    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-tight);
 }
-
 div.shortcuts p {
-    font-weight: 500;
-    line-height: 1;
-    font-size: 1.5em;
+    font-weight: var(--fw-medium);
+    line-height: var(--lh-tight);
 }
 
 span.code_box {
@@ -1601,4 +1540,40 @@ div.displayMethodsOptions {
 
 div.displayMethodsOptions div.checkbox-wrapper-46 {
     margin-left: 0.5rem;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    .base {
+        padding-top: calc(var(--space-xl) * 3.5);
+    }
+    .easysheet_info {
+        grid-column: span 2 / span 2;
+    }
+    div.grid_col_3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    div.grid_col_2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media only screen and (max-width: 768px) {
+    .body .base {
+        padding-top: var(--space-xl);
+        padding-bottom: var(--space-md);
+    }
+    .main_file_selector {
+        margin-top: var(--space-md);
+        margin-bottom: var(--space-md);
+        height: 8rem; /* Keep specific height maybe */
+    }
+    /* label.dragDrop { height: auto; } */
+    div.grid_col_1 {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+@media only screen and (min-width: 1200px) {
+    div.intro_container p {
+        font-size: var(--fs-4xl);
+    }
 }

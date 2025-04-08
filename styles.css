@@ -127,6 +127,7 @@ body {
 div.base {
     position: relative;
     width: 100%;
+    padding-top: var(--space-xl);
 }
 
 div.base_inner {
@@ -279,21 +280,17 @@ div.shortcuts p {
     font-weight: var(--fw-medium);
     line-height: var(--lh-tight);
 }
-
 span.code_box {
     display: inline-block;
-    margin: 2px;
-    padding: 3px 6px;
-    border: 1px solid #d4d4d4;
-    border-radius: 4px;
-    font-family: monospace;
-    background-color: #f0f0f0;
+    margin: var(--space-xxs);
+    padding: 0.1875rem var(--space-xs);
+    border: var(--border-width-sm) solid var(--clr-code-border);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-code);
+    background-color: var(--clr-code-bg);
 }
 
-.flex {
-    display: flex;
-}
-
+/* edit page */
 .top_bar_thingy {
     flex-direction: row;
     justify-content: space-around;
@@ -1544,10 +1541,10 @@ div.displayMethodsOptions div.checkbox-wrapper-46 {
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-    .base {
+    div.base {
         padding-top: calc(var(--space-xl) * 3.5);
     }
-    .easysheet_info {
+    div.easysheet_info {
         grid-column: span 2 / span 2;
     }
     div.grid_col_3 {
@@ -1558,11 +1555,11 @@ div.displayMethodsOptions div.checkbox-wrapper-46 {
     }
 }
 @media only screen and (max-width: 768px) {
-    .body .base {
-        padding-top: var(--space-xl);
+    div.body div.base {
+        /* padding-top: var(--space-xl); */
         padding-bottom: var(--space-md);
     }
-    .main_file_selector {
+    div.main_file_selector {
         margin-top: var(--space-md);
         margin-bottom: var(--space-md);
         height: 8rem; /* Keep specific height maybe */

@@ -159,14 +159,15 @@ div.brand_name h1 {
     display: inline-block;
     font-family: var(--font-heading);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-2xl);
+    font-size: calc(var(--fs-2xl) - 0.2rem);
     line-height: var(--lh-normal);
     color: var(--clr-text);
 }
-div.brand_name span {
+span.brand_text {
     display: block;
     text-overflow: clip;
     overflow: hidden;
+    width: fit-content;
 }
 /* header links */
 .header-link {
@@ -175,17 +176,22 @@ div.brand_name span {
     align-items: center;
     gap: var(--space-sm);
     font-size: 0.9rem;
-    color: var(--clr-text-muted);
+    /* color: var(--clr-text-muted); */
+    color: var(--clr-text);
     padding: var(--space-sm) var(--space-md);
     background-color: transparent;
-    border: var(--border-width) solid transparent;
-    border-radius: var(--radius-pill);
-    transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+    /* border: var(--border-width) solid transparent; */
+    border: var(--border-width-md) solid transparent;
+    /* border-radius: var(--radius-pill); */
+    border-radius: var(--radius-md);
+    /* transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast); */
 }
 .header-link:hover {
-    background-color: var(--clr-bg-shape);
-    border-color: var(--clr-border);
-    color: var(--clr-primary);
+    /* background-color: var(--clr-bg-shape); */
+    /* border-color: var(--clr-border); */
+    border-color: var(--clr-border-dashed);
+    /* color: var(--clr-primary); */
+    color: var(--clr-text);
 }
 .header-link .material-symbols-outlined {
     font-size: 1.1em;
@@ -193,6 +199,7 @@ div.brand_name span {
 a {
     text-decoration: none;
     font-weight: var(--fw-medium);
+    font-family: var(--font-heading);
 }
 
 /* landing page body */
@@ -1574,10 +1581,17 @@ div.displayMethodsOptions div.checkbox-wrapper-46 {
     margin-left: 0.5rem;
 }
 
+/* footer */
+footer.footer {
+    grid-area: footer;
+    padding-top: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
 /* Media Queries */
 @media only screen and (min-width: 768px) {
     div.base {
-        padding-top: calc(var(--space-xl) * 3.5);
+        padding-top: calc(var(--space-xl) * 3);
     }
     div.easysheet_info {
         grid-column: span 2 / span 2;

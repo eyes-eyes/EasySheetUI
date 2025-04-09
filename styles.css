@@ -1591,7 +1591,8 @@ footer.footer {
 /* Media Queries */
 @media only screen and (min-width: 768px) {
     div.base {
-        padding-top: calc(var(--space-xl) * 3);
+        padding-top: calc(var(--space-xl) * 3
+        );
     }
     div.easysheet_info {
         grid-column: span 2 / span 2;

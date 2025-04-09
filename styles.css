@@ -57,7 +57,7 @@ potential color palette?: https://coolors.co/fadc00-f8f9fa-b388eb-8093f1-3a3042
     --space-2xl: 3rem;
     --space-3xl: 4rem;
     --space-header-py-top: 1.875rem;
-    --space-header-py-bottom: 0.625rem;
+    --space-header-py-bottom: 1.15rem;
     --space-container-min-w: 768px;
     --space-container-max-w: 1296px;
 
@@ -104,6 +104,9 @@ body {
 .items-center {
     align-items: center;
 }
+.justify-between {
+    justify-content: space-between;
+}
 .justify-center {
     justify-content: center;
 }
@@ -118,6 +121,11 @@ body {
 }
 .h-full {
     height: 100%;
+}
+
+/* display utilites */
+.step {
+    display: none;
 }
 .active {
     display: block;
@@ -139,7 +147,9 @@ div.base_inner {
 
 /* landing page header */
 .upload_header {
-    position: relative;
+    /* position: relative; */
+    border-bottom: var(--border-width-sm) solid var(--clr-code-border);
+    background-color: var(--clr-hover-bg);
 }
 .upload_header .base {
     padding-top: var(--space-header-py-top);
@@ -157,6 +167,32 @@ div.brand_name span {
     display: block;
     text-overflow: clip;
     overflow: hidden;
+}
+/* header links */
+.header-link {
+    /* For potential GitHub link */
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: 0.9rem;
+    color: var(--clr-text-muted);
+    padding: var(--space-sm) var(--space-md);
+    background-color: transparent;
+    border: var(--border-width) solid transparent;
+    border-radius: var(--radius-pill);
+    transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+.header-link:hover {
+    background-color: var(--clr-bg-shape);
+    border-color: var(--clr-border);
+    color: var(--clr-primary);
+}
+.header-link .material-symbols-outlined {
+    font-size: 1.1em;
+}
+a {
+    text-decoration: none;
+    font-weight: var(--fw-medium);
 }
 
 /* landing page body */
@@ -290,7 +326,6 @@ span.code_box {
     background-color: var(--clr-code-bg);
 }
 
-/* edit page */
 .top_bar_thingy {
     flex-direction: row;
     justify-content: space-around;
@@ -1556,7 +1591,7 @@ div.displayMethodsOptions div.checkbox-wrapper-46 {
 }
 @media only screen and (max-width: 768px) {
     div.body div.base {
-        /* padding-top: var(--space-xl); */
+        padding-top: var(--space-xl);
         padding-bottom: var(--space-md);
     }
     div.main_file_selector {

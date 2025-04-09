@@ -9,23 +9,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:wght@300;400;500;700&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back"
-        />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code_blocks"
-        />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" />
-        <style>
-            .material-symbols-outlined {
-                font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-            }
-        </style>
     </head>
     <body>
         <section id="main_file_selector_areas" class="step active">
@@ -35,7 +21,7 @@
                         <div class="brand_name flex justify-between items-center">
                             <h1>Easy Sheet</h1>
                             <a href="https://github.com/eyes-eyes/mcPackSpriteSheetGenerator" class="header-link" target="_blank" rel="noopener noreferrer">
-                                <span class="material-symbols-outlined">code_blocks</span>
+                                <span class="material-symbols-outlined">code</span>
                                 View Source
                             </a>
                         </div>
@@ -53,7 +39,7 @@
                                 </div> -->
                                 <div class="keyinfo items-center">
                                     <p>
-                                        <!-- <span class="material-symbols-outlined">check_circle</span> -->
+                                        <span class="material-symbols-outlined">folder_zip</span>
                                         Support for <span class="font_bold">Zip Java Packs</span> only!
                                     </p>
                                 </div>
@@ -63,20 +49,39 @@
                                 </div>
                                 <div class="easysheet_features grid grid_col_2 gap-sm">
                                     <div class="grid gap-sm">
-                                        <div class="flex flex-row gap-sm">Merge door textures</div>
-                                        <div class="flex flex-row gap-sm">Add multiple sprites at once</div>
-                                        <div class="flex flex-row gap-sm">Leather armor tinting soon™</div>
+                                        <div class="feature-item">
+                                            <span class="material-symbols-outlined">merge</span>
+                                            Merge door textures
+                                        </div>
+                                        <div class="feature-item">
+                                            <span class="material-symbols-outlined">library_add</span>
+                                            Add multiple sprites at once
+                                        </div>
+                                        <div class="feature-item">
+                                            <span class="material-symbols-outlined">format_paint</span>
+                                            Leather armor tinting soon™
+                                        </div>
                                     </div>
                                     <div class="grid gap-sm">
-                                        <div class="flex flex-row gap-sm">Display sprites by color & height</div>
-                                        <div class="flex flex-row gap-sm">Support for ALL versions</div>
-                                        <div class="flex flex-row gap-sm">Many pre-select options!</div>
+                                        <div class="feature-item">
+                                            <span class="material-symbols-outlined">sort</span>
+                                            Display sprites by color & height
+                                        </div>
+                                        <div class="feature-item">
+                                            <span class="material-symbols-outlined">verified</span>
+                                            Support for ALL versions
+                                        </div>
+                                        <div class="feature-item">
+                                            <span class="material-symbols-outlined">checklist</span>
+                                            Many pre-select options!
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="main_file_selector flex items-center justify-center text-center">
-                                <label for="input_main_upload" class="dragDrop flex flex-col items-center justify-center w-full h-full"
-                                    >Click or Drop Zipped Resource Pack</label
+                                <label for="input_main_upload" class="dragDrop flex flex-col items-center justify-center w-full h-full">
+                                    <span class="material-symbols-outlined" style="font-size: 2em; margin-bottom: 0.5rem">upload_file</span>
+                                    Click or Drop Zipped Resource Pack</label
                                 >
                                 <input class="file_upload" type="file" accept="application/x-zip-compressed" id="input_main_upload" />
                             </div>

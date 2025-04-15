@@ -293,9 +293,10 @@ input.file_upload {
 }
 
 /* more info area */
-/* div.moreinfo_area {
-    margin-bottom: var(--space-3xl);
-} */
+div.moreinfo_area {
+    background: var(--clr-moreinfo-bg);
+    border-top: var(--border-width-sm) solid var(--clr-code-border);
+}
 div.moreinfo_inner {
     position: relative;
     max-width: var(--space-container-max-w);
@@ -1599,7 +1600,7 @@ div.displayMethodsOptions div.checkbox-wrapper-46 {
 footer.footer {
     grid-area: footer;
     padding-top: var(--space-lg);
-    margin-top: var(--space-xl);
+    margin-top: var(--space-2xl);
 }
 
 /* Media Queries */

@@ -187,10 +187,10 @@ span.brand_text {
     align-items: center;
     gap: var(--space-sm);
     font-size: 0.9rem;
-    /* color: var(--clr-text-muted); */
     color: var(--clr-text);
-    padding: var(--space-sm) var(--space-md);
-    background-color: transparent;
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--clr-keyinfo-bg);
+    /* background-color: transparent; */
     /* border: var(--border-width) solid transparent; */
     border: var(--border-width-md) solid transparent;
     /* border-radius: var(--radius-pill); */

@@ -334,9 +334,17 @@ div.github_info p {
     font-weight: var(--fw-bold);
     line-height: var(--lh-tight);
 }
-div.shortcuts p {
-    font-weight: var(--fw-medium);
+div.shortcuts {
     line-height: var(--lh-tight);
+}
+div.shortcuts h1 {
+    font-family: var(--font-heading);
+    font-size: var(--fs-md);
+}
+div.shortcuts p {
+    font-family: var(--font-main);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-sm);
 }
 span.code_box {
     display: inline-block;
